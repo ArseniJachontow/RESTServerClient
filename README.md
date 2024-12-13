@@ -5,5 +5,5 @@ Der Server ist in Python erstellt, und der Client in C++.
 **Anleitung**
 
 Folgende Komponenten müssen auf dem System installiert sein:
--Python
--Cmake
+* Python
+* Cmake
