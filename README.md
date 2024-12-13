@@ -91,9 +91,9 @@ Ins Verzeichnis navigieren, Kommandozeile dort öffnen und Kommandos ausprobiere
 
 ./client http://127.0.0.1:8000 -read_all
 
-./client http://127.0.0.1:8000 -read_car 1
-
 ./client http://127.0.0.1:8000 -update_car 1 Orange
+
+./client http://127.0.0.1:8000 -read_car 1
 
 ./client http://127.0.0.1:8000 -delete_car 1
 ```
