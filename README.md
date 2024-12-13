@@ -67,13 +67,13 @@ cmake --build .
 
 Es können folgende Kommandos benutzt werden:
 
-* -read_all
 * -create_car
+* -read_all
 * -read_car
 * -update_car
 * -delete_car
 
-Das erste Argument des Clients ist immer Adresse des Servers, in den Beispielen hier http://127.0.0.1:8000, bitte in den Beispielen die Adresse ändern, falls diese abweicht.
+Das erste Argument des Clients ist immer die Adresse des Servers, in den Beispielen hier http://127.0.0.1:8000, bitte ändern, falls diese abweicht.
 
 Nach der Kompilierung befindet sich der Client im Verzeichnis **RESTServerClient\Client\build\Debug**
 
