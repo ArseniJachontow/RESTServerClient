@@ -77,7 +77,7 @@ Es können folgende Kommandos benutzt werden:
 
 Das erste Argument des Clients ist immer die Adresse des Servers, in den Beispielen hier http://127.0.0.1:8000, bitte ändern, falls diese abweicht.
 
-Nach der Kompilierung befindet sich der Client im Verzeichnis **RESTServerClient\Client\build\Debug**
+Nach der Kompilierung befindet sich der Client im folgenden Verzeichnis: RESTServerClient\Client\build\Debug
 
 Ins Verzeichnis navigieren, Kommandozeile dort öffnen und Kommandos ausprobieren:
 
