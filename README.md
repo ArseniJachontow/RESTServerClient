@@ -34,7 +34,7 @@ pip install sqlmodel
 ```
 **Starten des Servers und Kompilierung des Clients**
 
-Neues Verzeichnis auf dem Computer erstellen, Kommandozeile in dem Verzeichnis öffenen und Repo klonen:
+Neues Verzeichnis auf dem Computer erstellen, Kommandozeile in dem Verzeichnis öffnen und Repo klonen:
 
 ```
 git clone https://github.com/ArseniJachontow/RESTServerClient
