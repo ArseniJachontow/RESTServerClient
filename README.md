@@ -67,11 +67,11 @@ cmake --build .
 
 Es können folgende Kommandos benutzt werden:
 
-* -create_car
+* -create_car [Hersteller Modell Farbe]
 * -read_all
-* -read_car
-* -update_car
-* -delete_car
+* -read_car [ID]
+* -update_car [ID]
+* -delete_car [ID]
 
 Das erste Argument des Clients ist immer die Adresse des Servers, in den Beispielen hier http://127.0.0.1:8000, bitte ändern, falls diese abweicht.
 
