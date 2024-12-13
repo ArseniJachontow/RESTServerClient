@@ -24,4 +24,9 @@ Folgende Komponenten müssen auf dem System installiert sein:
 
 **Installation der benötigten Python-Module**
 
-Bla
+Damit der Server lauffähig ist, müssen die benötigten Python-Module zuerst installiert werden. In der Konsole eingeben:
+
+```
+pip install "fastapi[standard]"
+pip install sqlmodel
+```
