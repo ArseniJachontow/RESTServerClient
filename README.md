@@ -63,6 +63,32 @@ cmake ..
 cmake --build .
 ```
 
-**Anleitung**
+**Benutzeranleitung des Clients**
 
-Test
+Es können folgende Kommandos benutzt werden:
+
+* -read_all
+* -create_car
+* -read_car
+* -update_car
+* -delete_car
+
+Das erste Argument des Clients ist immer Adresse des Servers, in den Beispielen hier http://127.0.0.1:8000, bitte in den Beispielen die Adresse ändern, falls diese abweicht.
+
+Nach der Kompilierung befindet sich der Client im Verzeichnis **RESTServerClient\Client\build\Debug**
+
+Ins Verzeichnis navigieren, Kommandozeile dort öffnen und Kommandos ausprobieren:
+
+```
+./client http://127.0.0.1:8000 -create_car Ford Explorer Red
+./client http://127.0.0.1:8000 -create_car Toyota Corolla Blue
+./client http://127.0.0.1:8000 -create_car VW ID_Buzz Purple
+
+./client http://127.0.0.1:8000 -read_all
+
+./client http://127.0.0.1:8000 -read_car 1
+
+./client http://127.0.0.1:8000 -update_car 1 Orange
+
+./client http://127.0.0.1:8000 -delete_car 1
+```
