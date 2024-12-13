@@ -4,7 +4,9 @@ REST-Server und der dazugehörige Client.
 
 Der Server ist in Python erstellt, und der Client in C++.
 
-Als Usecase wird von einer Autolackiererei ausgegangen. Ein Auto wird registriert mittels seiner folgenden Eigenschaften: Hersteller, Modell, Farbe. Beim Eintrag des Autos in die Datenbank kriegt es eine ID. Basierend auf dieser ID kann dann die Autofarbe mittels eines Update-Requests geändert werden.
+Als Usecase wird von einer Autolackiererei ausgegangen. Ein Auto wird registriert mittels seiner folgenden Eigenschaften: Hersteller, Modell, Farbe.
+
+Beim Eintrag des Autos in die Datenbank kriegt es eine ID. Basierend auf dieser ID kann dann die Autofarbe mittels eines Update-Requests geändert werden.
 
 **Benutzte Komponenten**
 
