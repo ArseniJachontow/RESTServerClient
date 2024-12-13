@@ -48,7 +48,7 @@ void create_car(std::string vendor, std::string model, std::string color)
     std::cout << "Creating car. " << "Vendor: " << vendor << ", " << "Model: " << model << ", " << "Color: " << color << std::endl;
 
     auto response = cpr::Post(cpr::Url{ server_and_endpoint },
-        cpr::Body{ create_car_json.dump() /* converts it to a string */},
+        cpr::Body{ create_car_json.dump() /* converts it to a string */ },
         cpr::Header{ { "Content-Type", "application/json" } });
 
     if (response.status_code == 200)
@@ -73,7 +73,7 @@ void read_car(std::string ID)
     auto response = cpr::Get(cpr::Url{ server_and_endpoint + ID });
     
     if (response.status_code == 404)
-        std::cout << "No car with such an ID found";
+        std::cout << "No car with such an ID found" << std::endl;
     else
     {
         json response_data = json::parse(response.text);
@@ -100,11 +100,16 @@ void update_car(std::string ID, std::string color)
         cpr::Header{ { "Content-Type", "application/json" } });
 
     if (response.status_code == 200)
-        std::cout << "Car with the ID " << ID << " " << "successfully updated to " << color;
+        std::cout << "Car with the ID " << ID << " " << "successfully updated to " << color << std::endl;
     else
     {
-        std::cout << "Error, see returned status code";
-        std::cout << "Returned Status Code: " << response.status_code << std::endl;
+        if (response.status_code == 404)
+            std::cout << "No car with such an ID found" << std::endl;
+        else
+        {
+            std::cout << "Error, see returned status code" << std::endl;
+            std::cout << "Returned Status Code: " << response.status_code << std::endl;
+        }
     }
 }
 
@@ -116,11 +121,16 @@ void delete_car(std::string ID)
         cpr::Header{ { "Content-Type", "application/json" } });
 
     if (response.status_code == 200)
-        std::cout << "Car with the ID " << ID << " " << "successfully deleted";
+        std::cout << "Car with the ID " << ID << " " << "successfully deleted" << std::endl;
     else
     {
-        std::cout << "Error, see returned status code";
-        std::cout << "Returned Status Code: " << response.status_code << std::endl;
+        if (response.status_code == 404)
+            std::cout << "No car with such an ID found" << std::endl;
+        else
+        {
+            std::cout << "Error, see returned status code" << std::endl;
+            std::cout << "Returned Status Code: " << response.status_code << std::endl;
+        }
     }
 }
 
